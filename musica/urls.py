@@ -14,8 +14,9 @@ urlpatterns = [
     
 
     path('artistas/tipo/solista', views.artista_solista, name='artista_solista'), 
-    path('album/cantidad/', views.album_count, name='album-count'), 
+    path('album/cantidad/', views.album_contar, name='album-contar'), 
     path('reporte/canciones/pop', views.reporte_canciones, name='reporte-canciones'),
+    path('reporte/albumes/cantidad/', views.album_contar_con_datos, name='album-contar-con-datos'), 
     path('', include(router.urls)),
 
 ]

@@ -29,3 +29,8 @@ class PlaylistSerializer(serializers.ModelSerializer):
 class ReporteCancionesSerializer(serializers.Serializer):
     cantidad = serializers.IntegerField()
     canciones = CancionSerializer(many=True)
+
+
+class ReporteAlbumesSerializer(serializers.Serializer):
+    cantidad = serializers.IntegerField()
+    albumes = AlbumSerializer(many=True)    

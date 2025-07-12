@@ -13,7 +13,6 @@ pip install -r requirements.txt
 ```
 
 ## Cargar datos iniciales
-Crear la base de datos, luego ejecutar:
 
 ```sh
 python manage.py migrate
